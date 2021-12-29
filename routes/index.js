@@ -82,6 +82,7 @@ router.get("/", (req, res, next) => {
 
 router.post("/servey",(req,res,next)=>{
   var food;
+  console.log(req.body.servey)
   if(req.body.servey[0]){
     food = require("../config/survey").desert
   }
