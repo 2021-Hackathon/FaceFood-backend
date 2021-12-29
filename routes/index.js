@@ -61,6 +61,7 @@ router.post("/", upload.single("attachment"), function (req, res, next) {
 router.get("/", (req, res, next) => {
   const date = new Date();
   const hour = date.getHours();
+  console.log(date);
   var food;
   if (6 <= hour && hour < 12) {
     food = require("../config/time").Morning
