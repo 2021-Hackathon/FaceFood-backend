@@ -9,7 +9,7 @@ router.post("/", upload.single("attachment"), function (req, res, next) {
   const fileURL =
     "http://localhost:3000/" + "static/images/" + req.file.filename;
   const model = new TeachableMachine({
-    modelUrl: "https://teachablemachine.withgoogle.com/models/R01gUws0i/",
+    modelUrl: "https://teachablemachine.withgoogle.com/models/_xM4N2Lrg/",
   });
 
   const error = (error) => {
